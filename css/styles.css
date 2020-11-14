@@ -514,11 +514,11 @@ img {
   border: 1px solid #eeeeee;
 }
 .port-list-link:hover .img-overlay-text,
-.port-list-link:hover .img-overlay-text {
+.port-list-link:focus .img-overlay-text {
   transform: translateY(0);
 }
 .port-list-link:hover,
-.port-list-link:hover {
+.port-list-link:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
