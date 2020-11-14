@@ -60,7 +60,13 @@
       <section class="hero-section overlay">
         <div class="hero container">
           <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button
+            data-modal-open
+            type="button"
+            class="hero-button data-modal-open"
+          >
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Особенности -->
@@ -104,25 +110,34 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="example-list list">
             <li class="item">
-              <img
-                src="./img/index/Example1.jpg"
-                alt="пример работы"
-                width="370"
-              />
+              <div class="example-overlay">
+                <img
+                  src="./img/index/Example1.jpg"
+                  alt="пример работы"
+                  width="370"
+                />
+                <p class="example-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./img/index/Example2.jpg"
-                alt="пример работы"
-                width="370"
-              />
+              <div class="example-overlay">
+                <img
+                  src="./img/index/Example2.jpg"
+                  alt="пример работы"
+                  width="370"
+                />
+                <p class="example-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./img/index/Example3.jpg"
-                alt="пример работы"
-                width="370"
-              />
+              <div class="example-overlay">
+                <img
+                  src="./img/index/Example3.jpg"
+                  alt="пример работы"
+                  width="370"
+                />
+                <p class="example-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -401,5 +416,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./img/svg/sprite.svg#X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
